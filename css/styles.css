@@ -63,6 +63,12 @@ header{
 	margin-top: 59px;
 }
 
+.contenedor-inicial-contact{
+	background: url(../images/indexbanner-bg2.jpg) no-repeat center top scroll;
+	min-height: 500px;
+	margin-top: 59px;
+}
+
 .wrapper{
 	max-width: 1200px;
 	margin: auto;
@@ -73,6 +79,37 @@ header{
 	font-size: 40px;
 	display: inline-block;
 	margin: 280px 0 0;
+}
+
+.main-title-contact{
+	color: #fff;
+	font-size: 40px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding-top: 160px;
+}
+
+.main-title-contact + p{
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+}
+
+.second-title-contact{
+	color: #000;
+	font-size: 40px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.second-title-contact + p{
+	color: #000;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
 }
 
 .productos-destacados{
@@ -337,6 +374,52 @@ table, td, tr{
 
 .contenedor-azul article h2 strong{
 	color: #00aff1;
+}
+
+.wrapper-contact form{
+	text-align: center;
+	width: 720px;
+	margin: 0 320px 0 320px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.wrapper-contact form input[type=text]{
+	padding: 10px;
+	margin: 3px;
+	width: 350px;
+	box-shadow: inset 0px 0px 3px grey;
+	border: 1px grey solid;
+}
+
+.wrapper-contact form input[type=textarea]{
+	padding: 10px;
+	margin: 3px;
+	width: 350px;
+	box-shadow: inset 0px 0px 3px grey;
+	border: 1px grey solid;
+	height: 123px;
+}
+
+.wrapper-contact form input[type=submit]{
+	display: block;
+	margin: 30px auto 30px auto;
+	padding: 15px 30px;
+	background-color: teal;
+	border-radius: 5px;
+	border-style: none;
+	color: white;
+	letter-spacing: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.float-izq{
+	float: left;
+}
+
+.float-der{
+	float: right;
 }
 
 @media (max-width: 860px){

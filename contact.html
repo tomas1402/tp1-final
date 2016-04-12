@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Contact Page</title>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-<head>
-	<nav>
-		<ul>
-			<li>
-				<a href="index.html">
-					<img src="images/header-logo.png" alt="logo-webpage">
-				</a>
-			</li>
-			<li>
-				<a href="home.html">Home</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</nav>
-</head>
-<section>
-	<article>
-	<img src="images/indexbanner-bg2.jpg">
-		<h1>
-			Contact
-		</h1>
-		<h2>
-			Carabitur ultricies elementum mauris eu dapibus dui aliquet et mauris euismus.
-		</h2>
-	</article>
-</section>
-<section>
-	<article>
-		<h2>Get in Touch</h2>
-		<h3>Duis egestas nibh at ex ornare efficitur fusce ullamcorper turpis eu lectus</h3>
-	</article>
-	<form>
-		<input type="text" placeholder="Name">
-		<br>
-		<input type="text" placeholder="Surname">
-		<br>
-		<input type="text" placeholder="Subject">
-		<br>
-		<input type="textarea" placeholder="Massage">
-		<br>
-		<input type="submit" value="SUBMIT">
-	</form>
-</section>
+	<header>
+		<img src="images/header-logo.png" alt="logo-webpage">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="cleaner"></div>
+	</header>
+	<section class="contenedor-inicial-contact">
+		<article class="wrapper">
+				<h1 class="main-title-contact">
+					Contact Us
+				</h1>
+				<p>
+					Carabitur ultricies elementum mauris eu dapibus dui aliquet et mauris euismus.
+				</p>
+		</article>
+	</section>
+	<section>
+		<article class="wrapper-contact">
+			<h2 class="second-title-contact">Get in Touch</h2>
+			<p>Duis egestas nibh at ex ornare efficitur fusce ullamcorper turpis eu lectus</p>
+			<form>
+				<div class="float-izq">
+					<input type="text" placeholder="Name">
+					<br>
+					<input type="text" placeholder="Surname">
+					<br>
+					<input type="text" placeholder="Subject">
+				</div>
+				<div class="float-der">
+					<input type="textarea" placeholder="Massage">
+				</div>
+				<div class="cleaner"></div>
+				<input type="submit" value="SUBMIT">
+			</form>
+			<div class="cleaner"></div>
+		</article>
+	</section>
 <footer>
-	<section>
-		<h2>Hosting use <span><strong>500.000</strong></span> happy customers. Want to see services?</h2>
-	</section>
-	<section>
-		<article>
-			2015 Coderland. All right reserved.
-		</article>
-		<article>
-			<a href="index.html">Home</a>
-			<a href="contact.html">Contact</a>
-		</article>
-	</section>
-</footer>
+		<section class="contenedor-azul">
+			<article  class="wrapper">
+					<h2>Hosting use <span><strong>500.000</strong></span> happy customers. Want to see services?</h2>
+			</article>
+		</section>
+		<section class="contenedor-azul-claro">
+			<article  class="wrapper">
+				<p>2015 Coderland. All right reserved.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</article>
+		</section>
+	</footer>
 </body>
 </html>
