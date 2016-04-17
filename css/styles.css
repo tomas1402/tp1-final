@@ -206,8 +206,6 @@ header{
 	position: relative;
 	text-align: right;
 	padding-right: 60px;
-	padding-bottom: 30px;
-	line-height: 25px;
 }
 
 .caract-izq article img{
@@ -219,8 +217,6 @@ header{
 .caract-der article{
 	position: relative;
 	padding-left: 60px;
-	padding-bottom: 30px;
-	line-height: 25px;
 }
 
 .caract-der article img{
@@ -270,7 +266,7 @@ header{
 	line-height: 20px;
 }
 
-.pricing article input[type=submit]{
+.pricing article button[type=submit]{
 	display: block;
 	margin-top: 30px;
 	padding: 15px 30px;
@@ -280,6 +276,7 @@ header{
 	color: white;
 	letter-spacing: 5px;
 	font-weight: bold;
+	width: 100%;
 }
 
 .pricing article b{
@@ -376,50 +373,46 @@ table, td, tr{
 	color: #00aff1;
 }
 
-.wrapper-contact form{
+.wrapper-contact{
+	max-width: 75%;
 	text-align: center;
-	width: 720px;
-	margin: 0 320px 0 320px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	margin: 40px auto;
+
 }
 
-.wrapper-contact form input[type=text]{
-	padding: 10px;
-	margin: 3px;
-	width: 350px;
-	box-shadow: inset 0px 0px 3px grey;
-	border: 1px grey solid;
-}
-
-.wrapper-contact form input[type=textarea]{
-	padding: 10px;
-	margin: 3px;
-	width: 350px;
-	box-shadow: inset 0px 0px 3px grey;
-	border: 1px grey solid;
-	height: 123px;
-}
-
-.wrapper-contact form input[type=submit]{
-	display: block;
-	margin: 30px auto 30px auto;
-	padding: 15px 30px;
-	background-color: teal;
-	border-radius: 5px;
-	border-style: none;
-	color: white;
-	letter-spacing: 5px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.float-izq{
+.input-izq{
 	float: left;
+	width: 48%;
+	margin: 1%;
 }
 
-.float-der{
+.input-der{
 	float: right;
+	width: 48%;
+	margin: 1%;
+}
+
+.input-der input, .input-izq input{
+	width: 100%;
+	display: block;
+	padding: 20px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0 0 4px grey;
+}
+
+.input-der input{
+	height: 209px;
+}
+
+.wrapper-contact form button[type=submit]{
+	color: #009688;
+	padding: 10px;
+	margin-top: 30px;
+	border: 1px solid #009688;
+	box-shadow: 0 0 4px grey;
+	border-radius: 5px;
+	width: 150px;
 }
 
 @media (max-width: 860px){
@@ -440,10 +433,45 @@ table, td, tr{
 		margin: 2.5%;
 	}
 
+	.contenedor-secundario{
+		background: url(../images/pricing-bg.jpg) no-repeat center top scroll;
+		min-height: 500px;
+		margin-top: -50px;
+		padding-top: 50px;
+	}
+
 	header nav{
 		display: inline-block;
 		float: none;
 		margin-left: 0;
+	}
+
+	.contenedor-azul-claro article p{
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.contenedor-azul-claro article nav{
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.caract-der h3{
+		font-size: 15px;
+	}
+
+	.caract-izq h3{
+		font-size: 15px;
+	}
+
+	.main-title-contact{
+		text-align: left;
+	}
+
+	.main-title-contact + p{
+		text-align: left;
 	}
 }
 
@@ -493,9 +521,9 @@ table, td, tr{
 	}
 
 	.caract-der article{
-		padding-left: 60px;
-		padding-bottom: 30px;
-		line-height: 25px;
+		text-align: left;
+		padding-right: 0;
+		padding-bottom: 40px;
 	}
 
 	.caract-der article img{
@@ -505,16 +533,63 @@ table, td, tr{
 	.caract-izq article{
 		text-align: left;
 		padding-right: 0;
-		padding-bottom: 60px;
+		padding-left: 60px;
+		padding-bottom: 40px;
 	}
-
 	.caract-izq article img{
 		left: 0;
+		/*right: auto;*/
 	}
 
 	.contenedor-secundario{
 		background-size: 100%;
-		margin-top: 0;
+		margin-top: 20px;
+	}
+
+	.contenedor-secundario  h2{
+		margin-top: 50px;
+	}
+
+	.contenedor-azul article h2{
+		color: white;
+		margin: 0;
+		text-align: center;
+		line-height: 50px;
+		padding: 15% 0;
+		font-weight: normal;
+	}
+
+	.contenedor-inicial-contact{
+		display: none;
+	}
+
+	.wrapper-contact{
+		max-width: 90%;
+	}
+
+	.input-izq{
+		float: none;
+		width: 89%;
+		margin: 1% auto;
+	}
+
+	.input-der{
+		float: none;
+		width: 89%;
+		margin: 1% auto;
+	}
+
+	.input-der input, .input-izq input{
+		width: 100%;
+		display: block;
+		padding: 20px;
+		border: 1px solid grey;
+		border-radius: 5px;
+		box-shadow: 0 0 4px grey;
+	}
+
+	.input-der input{
+		height: 209px;
 	}
 }
 
@@ -528,7 +603,7 @@ table, td, tr{
 	}
 
 	.contenedor-secundario h2{
-		padding-top: 30px;
+		margin-top: -20px;
 	}
 	.servicios-destacados{
 		margin-top: 40px;
@@ -543,9 +618,9 @@ table, td, tr{
 
 	.pricing article{
 		margin-top: 50px;
-		width: 60%;
-		margin: 30px auto;
-		float: none;
+		width: 45%;
+		margin: 2.5%;
+		float: left;
 	}
 
 }
